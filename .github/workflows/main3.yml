@@ -1,4 +1,10 @@
-name: Build Android APK
+- name: Setup Java
+  uses: actions/setup-java@v3
+  with:
+    java-version: '11'
+    distribution: 'temurin'
+    cache: gradle
+    cache-dependency-path: TikOptimizeAndroid/gradle/wrapper/gradle-wrapper.propertiesname: Build Android APK
 
 on:
   push:
